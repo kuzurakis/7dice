@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<BorderPane xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sevendice.ui.MainController">
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="%menu.game">
+                    <items>
+                        <MenuItem text="%menu.new" fx:id="menuNew"/>
+                        <MenuItem text="%menu.save" fx:id="menuSave"/>
+                        <MenuItem text="%menu.load" fx:id="menuLoad"/>
+                        <SeparatorMenuItem />
+                        <MenuItem text="%menu.exit" fx:id="menuExit"/>
+                    </items>
+                </Menu>
+                <Menu text="%menu.settings"/>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <StackPane fx:id="boardContainer"/>
+    </center>
+    <right>
+        <VBox spacing="8" fx:id="playerPanel" prefWidth="320" />
+    </right>
+</BorderPane>
